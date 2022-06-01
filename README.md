@@ -17,16 +17,30 @@ Assumptions for Markov Chain :
 1. The statistical system contains a finite number of states.
 2. The states are mutually exclusive and collectively exhaustive.
 3. The transition probability from one state to another state is constant over time.
+
 # Procedure :
 
 ![image](https://user-images.githubusercontent.com/104613195/170175685-c6187523-f268-4a3b-b03d-8bbe62647a57.png)
 
+# Program :
+## Developed By : S.SUMYUKTHA RANI
+## Register Number : 212220230050
+```
+import numpy as np
+P0=[0.3,0.2,0.5]
+P=[[0,2/3,1/3],[1/2,0,1/2],[1/2,1/2,0]]
+n=6
+for i in range(1,n+1):
+    P0=np.multiply(P0,P)
+    print("The %d -step probability distribution is"%i)
+    print(P0)
 
+```
+# Output :
 
-# Program
+![img](https://user-images.githubusercontent.com/75413726/170520161-0b608011-48db-47ae-8c41-f1931655d130.jpg)
 
+# Results : 
 
-
-
-# Results and Output : 
+Thus, the n-th step probability distribution matrix of the three state Markov chain was calculated.
 
